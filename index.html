@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,8 +8,84 @@
     <!-- DaisyUi & Tailwind CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Manrope font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <style>
+        .manrope-font {
+            font-family: "Manrope", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
 </head>
-<body>
-    
+
+<body class="manrope-font">
+    <header class="bg-[white]">
+        <!-- NavBar -->
+         <nav class="mr-[100px] ml-[100px]">
+        <div class="navbar flex justify-around">
+
+            <a class="text-2xl font-extrabold text-[#212121]"> <i
+                    class="fa-solid fa-arrow-right -rotate-45 w-[32px] h-[32px] rounded-full text-center bg-[#ABEF5F]"></i>Rinterio</a>
+            <div class="navbar-center hidden lg:flex">
+                <ul class="menu menu-horizontal px-1 text-xl text[#494949] font-bold">
+                    <li><a>Home</a></li>
+                    <li><a>Service</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                </ul>
+            </div>
+            <div class="rounded-2xl  w-[212px] h-[52px] flex justify-end">
+                <div class="w-auto h-auto flex justify-center items-center">
+                    <i class="fa-solid fa-magnifying-glass fa-2xs w-[30px] h-[30px] mx-auto my-auto bg-[#E9E9E9] rounded-full"></i>
+                <i class="fa-solid fa-cart-shopping h-[30px] w-[30px] bg-[#E9E9E9] rounded-full mx-auto my-auto"></i>
+            </div>
+                <!-- <a class="rounded-2xl bg-[#ABEF5F] font-bold text-[#1C1C1C] w-auto border-none  h-[30px] text-sm ">Book Consult <i
+                        class="fa-solid fa-arrow-right bg-black text-white w-[22px] h-[24px] rounded-full p-1"></i></a> -->
+                        <div class="badge badge-secondary bg-[#ABEF5F] border-none w-[160px] h-[42px] ml-3 font-extrabold">Book Consult</div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Banner section -->
+     <section class="mr-[100px] ml-[100px]  bg-white mt-5 mb-5 text-center justify-center flex">
+        <div class="hero flex justify-center w-[1170px] h-[720px]">
+            <div class="hero-content flex-col lg:flex-col">
+              <img
+                src="./assets/banner.png"
+                class="max-w-sm rounded-lg w-[580px] h-[370px] sm:" />
+              <div>
+                <h1 class="text-5xl font-extrabold text-black">A barn house of this design has a <br> striking appearance</h1>
+                <p class="py-6 text-[#494949] font-semibold ">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                <div class="flex justify-center">
+                    <button class="btn bg-[#ABEF5F80] rounded-2xl w-[200px] h-[56px] border-none font-bold text-black">View Details <i
+                        class="fa-solid fa-arrow-right -rotate-45 w-[16px] h-[16px] rounded-full text-black align-middle text-center bg-[#ABEF5F]"></i></button>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+
+     </section>
+
+    </header>
+    <main>
+
+    </main>
+    <footer>
+
+    </footer>
+
 </body>
+
 </html>
